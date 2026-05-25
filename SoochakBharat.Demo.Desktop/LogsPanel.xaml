@@ -1,0 +1,43 @@
+<UserControl x:Class="SoochakBharat.Demo.Desktop.LogsPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel Margin="24">
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,16">
+            <ComboBox ItemsSource="{Binding Source={StaticResource LogLevels}}"
+                      SelectedItem="{Binding SelectedLevel}"
+                      Width="180"
+                      Height="40"
+                      Margin="0,0,12,0"/>
+            <Button Content="Export Logs" Command="{Binding ExportCommand}" Height="40"/>
+        </StackPanel>
+        <Border Style="{StaticResource CardStyle}" Margin="0">
+            <ListView ItemsSource="{Binding FilteredEvents}"
+                      Background="{StaticResource PanelBackground}"
+                      Foreground="{StaticResource TextPrimary}"
+                      BorderThickness="0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="{StaticResource BorderSubtle}"
+                                BorderThickness="0,0,0,1"
+                                Padding="12,10">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Timestamp, StringFormat={}{0:HH:mm:ss.fff}}"
+                                           Width="100"
+                                           Style="{StaticResource SubtextStyle}"/>
+                                <TextBlock Text="{Binding Level}"
+                                           Width="80"
+                                           Margin="12,0,0,0"
+                                           FontFamily="Segoe UI Semibold"/>
+                                <TextBlock Text="{Binding Message}"
+                                           Margin="12,0,0,0"
+                                           TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Border>
+    </DockPanel>
+</UserControl>
+
+

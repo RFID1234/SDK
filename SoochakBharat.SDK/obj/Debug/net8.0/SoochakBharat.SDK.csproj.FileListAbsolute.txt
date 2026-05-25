@@ -1,0 +1,16 @@
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\SoochakBharat.SDK.csproj.AssemblyReference.cache
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\SoochakBharat.SDK.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\SoochakBharat.SDK.AssemblyInfoInputs.cache
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\SoochakBharat.SDK.AssemblyInfo.cs
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\SoochakBharat.SDK.csproj.CoreCompileInputs.cache
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\bin\Debug\net8.0\SoochakBharat.SDK.deps.json
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\bin\Debug\net8.0\SoochakBharat.SDK.dll
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\bin\Debug\net8.0\SoochakBharat.SDK.pdb
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\bin\Debug\net8.0\SoochakBharat.SDK.xml
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\bin\Debug\net8.0\ModuleAPI.dll
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\SoochakB.0314C304.Up2Date
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\SoochakBharat.SDK.dll
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\refint\SoochakBharat.SDK.dll
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\SoochakBharat.SDK.xml
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\SoochakBharat.SDK.pdb
+C:\Users\varni\Downloads\SoochakBharat.SDK.Enterprise\src\SoochakBharat.SDK\obj\Debug\net8.0\ref\SoochakBharat.SDK.dll

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SoochakBharat.SDK</name>
+    </assembly>
+    <members>
+        <member name="T:SoochakBharat.SDK.Api.LocalApiServer">
+            <summary>
+            Minimal HttpListener-based local API surface for querying readers and tags.
+            Not intended for Internet exposure; bind to localhost only.
+            </summary>
+        </member>
+        <member name="T:SoochakBharat.SDK.Concurrency.TagCache">
+            <summary>
+            Thread-safe tag de-duplication cache keyed by EPC (and optionally antenna).
+            </summary>
+        </member>
+        <member name="M:SoochakBharat.SDK.Concurrency.TagCache.Upsert(SoochakBharat.SDK.Models.TagData,System.Boolean)">
+            <summary>
+            Upserts a tag. If the EPC exists, read counts are aggregated.
+            Returns the current snapshot of the tag.
+            </summary>
+        </member>
+        <member name="M:SoochakBharat.SDK.Core.ReaderFactory.AutoDetectAsync(SoochakBharat.SDK.Models.Options.ReaderConnectionOptions)">
+            <summary>
+            Auto-detect readers:
+            1) Scan Serial COM ports for SIM3500
+            2) Try IP addresses (SIM3500 first, then LLRP)
+            </summary>
+        </member>
+        <member name="T:SoochakBharat.SDK.IReaderManager">
+            <summary>
+            Abstraction for managing one or more reader adapters in a thread-safe way.
+            </summary>
+        </member>
+        <member name="T:SoochakBharat.SDK.Models.InventoryStats">
+            <summary>
+            Rolling statistics for inventory performance.
+            Computed client-side from tag events.
+            </summary>
+        </member>
+        <member name="T:SoochakBharat.SDK.Models.ReaderInfo">
+            <summary>
+            Lightweight description of a connected reader instance.
+            </summary>
+        </member>
+        <member name="T:SoochakBharat.SDK.ReaderManagerService">
+            <summary>
+            Default implementation of <see cref="T:SoochakBharat.SDK.IReaderManager"/> for managing multiple adapters.
+            Thread-safe, designed for UI + LocalApiServer consumption.
+            </summary>
+        </member>
+    </members>
+</doc>

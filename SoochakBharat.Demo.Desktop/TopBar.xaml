@@ -1,0 +1,43 @@
+<UserControl x:Class="SoochakBharat.Demo.Desktop.TopBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:SoochakBharat.Demo.Desktop.ViewModels"
+             Height="64"
+             Background="{StaticResource PanelBackground}">
+    <Grid Margin="16,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- App Title -->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock Text="📡" FontSize="24" Margin="0,0,12,0"/>
+            <TextBlock Text="SoochakBharat RFID Studio"
+                       FontFamily="Segoe UI Semibold"
+                       FontSize="18"
+                       Foreground="{StaticResource TextPrimary}"/>
+        </StackPanel>
+
+        <!-- Reader Status / Dropdown -->
+        <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock Text="Reader status:"
+                       VerticalAlignment="Center"
+                       Foreground="{StaticResource MutedText}"/>
+            <Border Background="{StaticResource PrimaryBlue}" CornerRadius="10" Padding="10,4">
+                <TextBlock Text="{Binding ReaderView.Status}"
+                           Foreground="White"
+                           FontFamily="Segoe UI Semibold"/>
+            </Border>
+            <!-- Nav collapse button -->
+            <Button Content="⋮"
+                    Width="32"
+                    Height="32"
+                    Command="{Binding ToggleNavCommand}"
+                    Style="{StaticResource SecondaryButton}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
+
+
